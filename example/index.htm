@@ -1,0 +1,162 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <!-- basic.html -->
+    <title>KV JSAccordions</title>
+    <meta charset="UTF-8" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="../src/kv-jsaccordions.src.js"></script>
+    <link href="../src/kv-jsaccordions.src.css" type="text/css" rel="stylesheet" />
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>KV JSAccordions</h1>
+
+        <!-- Basic Setup -->
+        <h2>Basic setup</h2>
+        <pre class="code-snippet">
+&#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item&#x22; data-panel-id=&#x22;basic-panel1&#x22;&#x3E;Accordion 1&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;basic-panel1&#x22;&#x3E;
+    &#x3C;h4&#x3E;This is the content of Accordion 1&#x3C;/h4&#x3E;
+    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item&#x22; data-panel-id=&#x22;basic-panel2&#x22;&#x3E;Accordion 2&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;basic-panel2&#x22;&#x3E;
+    &#x3C;h4&#x3E;This is the content of Accordion 2&#x3C;/h4&#x3E;
+    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+        </pre>
+        <h4><span class="accordion-item" data-panel-id="basic-panel1">Accordion 1</span></h4>
+        <div class="accordion-panel" id="basic-panel1">
+            <h4>This is the content of Accordion 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+        </div>
+        <h4><span class="accordion-item" data-panel-id="basic-panel2">Accordion 2</span></h4>
+        <div class="accordion-panel" id="basic-panel2">
+            <h4>This is the content of Accordion 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+        </div>
+        <h4><span class="accordion-item" data-panel-id="basic-panel3">Accordion 3</span></h4>
+        <div class="accordion-panel" id="basic-panel3">
+            <h4>This is the content of Accordion 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+        </div>
+        <!-- Basic Setup -->
+        <!-- Active Setup -->
+        <h2>Active on load</h2>
+        <pre class="code-snippet">
+&#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item&#x22; data-panel-id=&#x22;active-panel1&#x22;&#x3E;Accordion 1&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;active-panel1&#x22;&#x3E;
+    &#x3C;h4&#x3E;This is the content of Accordion 3&#x3C;/h4&#x3E;
+    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item active&#x22; data-panel-id=&#x22;active-panel2&#x22;&#x3E;Accordion 2&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;active-panel2&#x22;&#x3E;
+    &#x3C;h4&#x3E;This is the content of Accordion 3&#x3C;/h4&#x3E;
+    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+</pre>
+        <h4><span class="accordion-item" data-panel-id="active-panel1">Accordion 1</span></h4>
+        <div class="accordion-panel" id="active-panel1">
+            <h4>This is the content of Accordion 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+        </div>
+        <h4><span class="accordion-item active" data-panel-id="active-panel2">Accordion 2</span></h4>
+        <div class="accordion-panel" id="active-panel2">
+            <h4>This is the content of Accordion 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+        </div>
+        <!-- Active Setup -->
+        <!-- Opening distant -->
+        <h2>Opening distant objects</h2>
+        <pre class="code-snippet">
+&#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item&#x22; data-panel-id=&#x22;distant-panel2&#x22;&#x3E;Accordion 1&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;distant-panel1&#x22;&#x3E;
+    &#x3C;h4&#x3E;This is the content of Accordion 3&#x3C;/h4&#x3E;
+    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item&#x22; data-panel-id=&#x22;distant-panel1&#x22;&#x3E;Accordion 2&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;distant-panel2&#x22;&#x3E;
+    &#x3C;h4&#x3E;This is the content of Accordion 3&#x3C;/h4&#x3E;
+    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+&#x3C;/div&#x3E;
+</pre>
+        <h4><span class="accordion-item" data-panel-id="distant-panel2">Accordion 1</span></h4>
+        <div class="accordion-panel" id="distant-panel1">
+            <h4>This is the content of Accordion 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+        </div>
+        <h4><span class="accordion-item" data-panel-id="distant-panel1">Accordion 2</span></h4>
+        <div class="accordion-panel" id="distant-panel2">
+            <h4>This is the content of Accordion 2</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+        </div>
+        <!-- Opening distant -->
+
+        <h2>Nesting accordions</h2>
+        <pre class="code-snippet">
+&#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item&#x22; data-panel-id=&#x22;nesting-panel1&#x22;&#x3E;Accordion 1&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;nesting-panel1&#x22;&#x3E;
+    &#x3C;h4&#x3E;This is the content of Accordion 1&#x3C;/h4&#x3E;
+    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+    &#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item&#x22; data-panel-id=&#x22;nesting-panel11&#x22;&#x3E;Accordion 1.1&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+    &#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;nesting-panel11&#x22;&#x3E;
+        &#x3C;h4&#x3E;This is the content of Accordion 1.1&#x3C;/h4&#x3E;
+        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+&#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item&#x22; data-panel-id=&#x22;nesting-panel2&#x22;&#x3E;Accordion 2&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+&#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;nesting-panel2&#x22;&#x3E;
+    &#x3C;h4&#x3E;This is the content of Accordion 3&#x3C;/h4&#x3E;
+    &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+    &#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item&#x22; data-panel-id=&#x22;nesting-panel21&#x22;&#x3E;Accordion 2.1&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+    &#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;nesting-panel21&#x22;&#x3E;
+        &#x3C;h4&#x3E;This is the content of Accordion 2.1&#x3C;/h4&#x3E;
+        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item&#x22; data-panel-id=&#x22;nesting-panel22&#x22;&#x3E;Accordion 2.2&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+    &#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;nesting-panel22&#x22;&#x3E;
+        &#x3C;h4&#x3E;This is the content of Accordion 2.2&#x3C;/h4&#x3E;
+        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;h4&#x3E;&#x3C;span class=&#x22;accordion-item active&#x22; data-panel-id=&#x22;nesting-panel23&#x22;&#x3E;Accordion 2.3&#x3C;/span&#x3E;&#x3C;/h4&#x3E;
+    &#x3C;div class=&#x22;accordion-panel&#x22; id=&#x22;nesting-panel23&#x22;&#x3E;
+        &#x3C;h4&#x3E;This is the content of Accordion 2.3&#x3C;/h4&#x3E;
+        &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.&#x3C;/p&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+</pre>
+        <h4><span class="accordion-item" data-panel-id="nesting-panel1">Accordion 1</span></h4>
+        <div class="accordion-panel" id="nesting-panel1">
+            <h4>This is the content of Accordion 1</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+            <h4><span class="accordion-item" data-panel-id="nesting-panel11">Accordion 1.1</span></h4>
+            <div class="accordion-panel" id="nesting-panel11">
+                <h4>This is the content of Accordion 1.1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+            </div>
+        </div>
+        <h4><span class="accordion-item" data-panel-id="nesting-panel2">Accordion 2</span></h4>
+        <div class="accordion-panel" id="nesting-panel2">
+            <h4>This is the content of Accordion 3</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+            <h4><span class="accordion-item" data-panel-id="nesting-panel21">Accordion 2.1</span></h4>
+            <div class="accordion-panel" id="nesting-panel21">
+                <h4>This is the content of Accordion 2.1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+            </div>
+            <h4><span class="accordion-item" data-panel-id="nesting-panel22">Accordion 2.2</span></h4>
+            <div class="accordion-panel" id="nesting-panel22">
+                <h4>This is the content of Accordion 2.2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+            </div>
+            <h4><span class="accordion-item active" data-panel-id="nesting-panel23">Accordion 2.3</span></h4>
+            <div class="accordion-panel" id="nesting-panel23">
+                <h4>This is the content of Accordion 2.3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at elit felis. Donec ac sapien a tortor efficitur consequat.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

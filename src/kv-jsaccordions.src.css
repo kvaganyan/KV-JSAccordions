@@ -1,0 +1,6 @@
+.accordion-panel {
+    height: 0px;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+}
